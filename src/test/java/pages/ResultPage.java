@@ -14,6 +14,8 @@ public class ResultPage extends TestBase {
 @FindBy(xpath="//a[contains(text(),'Add to cart')]")
 WebElement addToCartButton;
 
+@FindBy(css="div>div>ul>li>a[href='index.html']")
+WebElement homeButton;
 
 public ResultPage(){
 PageFactory.initElements(driver, this );
@@ -21,5 +23,8 @@ PageFactory.initElements(driver, this );
 
 public void addToCart() {
 	addToCartButton.click();
+	driver.switchTo().alert().accept();
+	homeButton.click();
 }
+
 }
