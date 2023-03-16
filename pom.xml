@@ -70,14 +70,12 @@
   		<parallel>methods</parallel>
   		<threadCount>2</threadCount>
   		<reuseForks>false</reuseForks>
-  		<testFailureIgnore>true</testFailureIgnore>
-  		<includes>
-  			<include>**/Runner.java</include>
-  		</includes>
+  		
+  		
   	</configuration>
   	</plugin>
   	
-  	<plugin>
+ 	<plugin>
   		<groupId>org.apache.maven.plugins</groupId>
   		<artifactId>maven-compiler-plugin</artifactId>
   		<version>3.8.1</version>
