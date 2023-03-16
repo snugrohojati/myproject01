@@ -13,7 +13,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-	
 	public static WebDriver driver;
 	public static Properties prop = null;
 	
@@ -47,7 +46,7 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().deleteAllCookies();		
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("url")); 
 	}
 	
 }
