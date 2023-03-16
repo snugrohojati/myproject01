@@ -19,8 +19,10 @@ public HomePage() {
 	
 }
 
-public void selectItem() {
+public void selectItem1() {
 	item1.click();
+}
+public void selectItem2() {
 	item2.click();
 }
 	
