@@ -70,8 +70,9 @@
   		<parallel>methods</parallel>
   		<threadCount>2</threadCount>
   		<reuseForks>false</reuseForks>
-  		
-  		
+  		<includes>
+  			<include>**/Runner.java</include>
+  		</includes>
   	</configuration>
   	</plugin>
   	
